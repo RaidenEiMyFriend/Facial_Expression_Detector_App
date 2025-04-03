@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emotion Detector</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <div class="container">
+        <h2 class="heading">How are you feeling today? 😊</h2>
+        <p class="subheading">Our AI will detect your emotions in real-time!</p>
+
+        <!-- TV Frame Container -->
+        <div class="tv-container">
+            <img src="{{ url_for('static', filename='tv.jpg') }}" class="tv-frame">
+            <img src="{{ url_for('video_feed') }}" class="video-screen">
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+/* Background Gradient Animation */
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+body {
+    background: linear-gradient(-45deg, #667eea, #764ba2,#4fb97c);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+}
+/* Tiêu đề chính */
+.heading {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Phụ đề */
+.subheading {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* TV Frame Container */
+.tv-container {
+    position: relative;
+    display: inline-block;
+    width: 600px; /* Điều chỉnh kích thước phù hợp */
+}
+
+/* Hình ảnh TV */
+.tv-frame {
+    width: 100%;
+    display: block;
+}
+
+/* Video Screen chèn vào TV */
+.video-screen {
+    position: absolute;
+    top: 31.7%;  /* Điều chỉnh để căn vào màn hình TV */
+    left: 6.5%;
+    width: 74%;
+    height: 47%;
+    border-radius: 5px;
+    /* Làm tròn 4 góc video */
+    border-radius: 15px;
+
+    /* Tạo hiệu ứng bo tròn mượt hơn */
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
